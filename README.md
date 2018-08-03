@@ -1,6 +1,14 @@
 # setup
 Notes on setting up systems
 
+## Kubuntu Backports
+
+Backports of new versions of KDE Platform, Plasma and Applications as well as major KDE apps for Kubuntu.
+
+    sudo add-apt-repository ppa:kubuntu-ppa/backports
+    sudo apt-get update
+    sudo apt full-upgrade
+
 ## fasd
 
     sudo apt install fasd
