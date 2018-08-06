@@ -71,7 +71,11 @@ Make the versions of python available wherever you want to run tox
 
     pyenv local 3.5.5
 
-### Instal [pipenv](https://docs.pipenv.org/)
+### Install [pipenv](https://docs.pipenv.org/)
+
+Add `PIPENV_VENV_IN_PROJECT` to the environment
+
+    echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.zshrc
 
 ## CUDA
 
