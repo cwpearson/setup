@@ -19,6 +19,10 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
     
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+### vscode font for agnoster theme
+
+    "editor.fontFamily": "'Hack'"
+
 ## fasd
 
     sudo apt install fasd
