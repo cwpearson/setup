@@ -73,7 +73,9 @@ Make the versions of python available wherever you want to run tox
 
 ### Install [pipenv](https://docs.pipenv.org/)
 
-Add `PIPENV_VENV_IN_PROJECT` to the environment
+    pip install --user pipenv
+
+Add `PIPENV_VENV_IN_PROJECT` to the environment. This puts the `.venv` directory in the directory you run pipenv from, not in `.local/share/virtualenvs`.
 
     echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.zshrc
 
