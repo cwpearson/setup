@@ -60,6 +60,11 @@ Pyenv helps manage multiple python installs through shell shims.
     echo 'eval "$(pyenv virtualenv-init -)"' ~/.zshrc
     
 [common build problems](https://github.com/pyenv/pyenv/wiki/common-build-problems) lists some packages you probably have to install to build most pythons.
+As of 8/14/2018, it said
+
+    sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+    libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+    xz-utils tk-dev libffi-dev liblzma-dev
 
 ### Using pyenv with tox
 
