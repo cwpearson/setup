@@ -30,6 +30,8 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
 
 ## Python
 
+This is to set up python with pipenv and pyenv, to support testing multiple pythons with tox.
+
 Install the system python, python3, and python3 distutils
 
     sudo apt install python python-dev python3 python3-dev python3-distutils
@@ -37,12 +39,12 @@ Install the system python, python3, and python3 distutils
 ### pip
 
 Don't install the system pip. Instead, use `get-pip.py`.
-This is because using pip to upgrade the system pip can cause problems.
+This is because using pip to upgrade the system pip can cause problems in the future.
 
     wget https://bootstrap.pypa.io/get-pip.py
     python get-pip.py --user
     
-Probably add `$HOME/.local/bin` to the `PATH`.
+Probably add `$HOME/.local/bin` to the `PATH` so you can use `pip`.
 
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 
@@ -69,10 +71,11 @@ As of 8/14/2018, it said
 Use pyenv to install the desired versions of python
 
     pyenv install 3.5.5
+    pyenv install 3.7.0
   
 Make the versions of python available wherever you want to run tox
 
-    pyenv local 3.5.5
+    pyenv local 3.5.5 3.7.0
 
 ### Install [pipenv](https://docs.pipenv.org/)
 
