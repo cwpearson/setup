@@ -38,11 +38,9 @@ Install the system python
 
 Don't install the system pip. Instead, use `get-pip.py`.
 This is because using pip to upgrade the system pip can cause problems.
-Install for both python2 and python3, if desired.
 
     wget https://bootstrap.pypa.io/get-pip.py
     python get-pip.py --user
-    python3 get-pip.py --user
     
 Probably add `$HOME/.local/bin` to the `PATH`.
 
