@@ -91,4 +91,31 @@ On supported platforms, use the CUDA network deb installer
 On unsupported platforms, install the Nvidia driver from the [graphics drivers ppa](https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa) and then install CUDA from the runfile **without installing the driver**.
 
     sudo ./run... --override
+    
+## Syncthing GUI
 
+To make it visible to the world ([source](https://superuser.com/questions/1026290/open-syncthing-port-on-raspberry-pi)):
+
+The [config file](http://docs.syncthing.net/users/config.html) should have a line like
+
+    <gui enabled="true" tls="false">
+        <address>0.0.0.0:8384</address>
+
+not
+
+    <gui enabled="true" tls="false">
+        <address>127.0.0.1:8384</address>
+
+The documentation explains this:
+
+    address
+    Set the listen addresses. One or more address elements must be present. Allowed address formats are:
+
+    IPv4 address and port (127.0.0.1:8384)
+    The address and port is used as given.
+
+    IPv6 address and port ([::1]:8384)
+    The address and port is used as given. The address must be enclosed in square brackets.
+
+    Wildcard and port (0.0.0.0:12345, [::]:12345, :12345)
+    These are equivalent and will result in Syncthing listening on all interfaces and both IPv4 and IPv6.
