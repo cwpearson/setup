@@ -30,9 +30,9 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
 
 ## Python
 
-Install the system python
+Install the system python, python3, and python3 distutils
 
-    sudo apt install python python-dev
+    sudo apt install python python-dev python3 python3-dev python3-distutils
 
 ### pip
 
