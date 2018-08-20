@@ -120,3 +120,9 @@ The documentation explains this:
 
     Wildcard and port (0.0.0.0:12345, [::]:12345, :12345)
     These are equivalent and will result in Syncthing listening on all interfaces and both IPv4 and IPv6.
+    
+## Minecraft Server
+
+[minecraft@.service](minecraft@.service) is a system systemd service file.
+It can probably be placed in `/etc/systemd/system`.
+It's set up for a raspberry pi, but can work with other systems with minor modifications.
