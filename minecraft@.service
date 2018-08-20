@@ -1,0 +1,23 @@
+[Unit]
+Description=Minecraft Server %i
+After=network.target
+
+[Service]
+WorkingDirectory=/mnt/data/pi/minecraft/%i
+User=pi
+ExecStart=/bin/sh -c '/usr/bin/screen -DmS mc-%i /usr/bin/java -server -Xmx1008M -Xms512M -jar /mnt/data/pi/minecraft/minecraft_server.1.13.jar nogui'
+ExecStop=/usr/bin/screen -p 0 -S mc-%i -X eval 'stuff "say SERVER SHUTTING DOWN. Saving map..."\\015'
+ExecStop=/usr/bin/screen -p 0 -S mc-%i -X eval 'stuff "save-all"\\015'
+ExecStop=/usr/bin/screen -p 0 -S mc-%i -X eval 'stuff "stop"\\015'
+ExecStop=/bin/sleep 10
+
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy=multi-user.target
+
+# mkdir /mnt/data/minecraft/XX
+# echo "eula=true" >> /mnt/data/minecraft/XX/eula.txt
+# sudo systemctl enable minecraft@XX
+# sudo systemctl start minecraft@XX
