@@ -57,7 +57,7 @@ Probably add `$HOME/.local/bin` to the `PATH` so you can use `pip`.
 
 #### macOS
 
-pip is already installed?
+Don't install pip, do everything in pipenvs (see below).
 
 ### [pyenv](https://github.com/pyenv/pyenv)
 
