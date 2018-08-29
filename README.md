@@ -38,6 +38,8 @@ Install the system python, python3, and python3 distutils
 
 ### pip
 
+#### Linux
+
 Don't install the system pip. Instead, use `get-pip.py`.
 This is because using pip to upgrade the system pip can cause problems in the future.
 
@@ -48,7 +50,13 @@ Probably add `$HOME/.local/bin` to the `PATH` so you can use `pip`.
 
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 
+#### macOS
+
+pip is already installed?
+
 ### [pyenv](https://github.com/pyenv/pyenv)
+
+#### Linux
 
 Pyenv helps manage multiple python installs through shell shims.
 
@@ -66,6 +74,10 @@ As of 8/14/2018, it said
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
     xz-utils tk-dev libffi-dev liblzma-dev
 
+#### macOS
+
+    brew install pyenv
+
 ### Using pyenv with tox
 
 Use pyenv to install the desired versions of python
@@ -79,9 +91,17 @@ Make the versions of python available wherever you want to run tox
 
 ### Install [pipenv](https://docs.pipenv.org/)
 
+#### Linux
+
     pip install --user pipenv
 
-Add `PIPENV_VENV_IN_PROJECT` to the environment. This puts the `.venv` directory in the directory you run pipenv from, not in `.local/share/virtualenvs`.
+#### maxOS
+
+    brew install pyenv
+
+#### Finally 
+
+Optionally add `PIPENV_VENV_IN_PROJECT` to the environment. This puts the `.venv` directory in the directory you run pipenv from, not in `.local/share/virtualenvs`.
 
     echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.zshrc
 
