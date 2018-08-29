@@ -28,6 +28,11 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
     sudo apt install fasd
     echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
 
+### [macOS](https://github.com/clvv/fasd/wiki/Installing-via-Package-Managers#mac-os-x)
+
+    brew install fasd
+    echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
+
 ## Python
 
 This is to set up python with pipenv and pyenv, to support testing multiple pythons with tox.
