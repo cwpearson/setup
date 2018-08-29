@@ -74,9 +74,14 @@ As of 8/14/2018, it said
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
     xz-utils tk-dev libffi-dev liblzma-dev
 
-#### macOS
+#### [macOS](https://github.com/pyenv/pyenv#homebrew-on-mac-os-x)
 
     brew install pyenv
+   
+add `eval "$(pyenv init -)"` to the shell init
+
+    echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+   
 
 ### Using pyenv with tox
 
