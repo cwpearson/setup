@@ -98,10 +98,13 @@ Use pyenv to install the desired versions of python
     pyenv install 3.7.0
  
 #### macOS
-  
+
+Some python packages need python installed as a "framework." The following is supposed to work:
+
       PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.6
       
-      
+#### Finally 
+
 Make the versions of python available wherever you want to run tox
 
     pyenv local 3.5.5 3.7.0
@@ -129,7 +132,17 @@ On supported platforms, use the CUDA network deb installer
 On unsupported platforms, install the Nvidia driver from the [graphics drivers ppa](https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa) and then install CUDA from the runfile **without installing the driver**.
 
     sudo ./run... --override
+   
+## Visual Studio Code
+
+To get powerline fonts, do something like the following in user settings:
     
+```json
+{
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
+}
+```
+   
 ## Syncthing GUI
 
 To make it visible to the world ([source](https://superuser.com/questions/1026290/open-syncthing-port-on-raspberry-pi)):
