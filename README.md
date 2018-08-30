@@ -142,7 +142,16 @@ To get powerline fonts, do something like the following in user settings:
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
 }
 ```
-   
+
+### Switching Python linter from pep8 to pycodestyle
+
+Until the python plugin formally switches over:
+
+```json
+"python.linting.pep8Path": "pycodestyle",
+"python.linting.pep8Enabled": true
+```
+
 ## Syncthing GUI
 
 To make it visible to the world ([source](https://superuser.com/questions/1026290/open-syncthing-port-on-raspberry-pi)):
