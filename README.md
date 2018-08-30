@@ -90,11 +90,18 @@ add `eval "$(pyenv init -)"` to the shell init
 
 ### Using pyenv with tox
 
+#### Linux
+
 Use pyenv to install the desired versions of python
 
     pyenv install 3.5.5
     pyenv install 3.7.0
+ 
+#### macOS
   
+      PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.6
+      
+      
 Make the versions of python available wherever you want to run tox
 
     pyenv local 3.5.5 3.7.0
