@@ -105,7 +105,7 @@ Some python packages need python installed as a "framework." The following is su
       
 #### Finally 
 
-Make the versions of python available wherever you want to run tox
+Make the versions of python available wherever you want to run tox. For example:
 
     pyenv local 3.5.5 3.7.0
 
