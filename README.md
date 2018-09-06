@@ -135,6 +135,8 @@ On supported platforms, use the CUDA network deb installer
 
 On unsupported platforms, install the Nvidia driver from the [graphics drivers ppa](https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa) and then install CUDA from the runfile **without installing the driver**.
 
+* [x86 CUDA 9.2 Ubuntu 17.10 runfile](https://developer.nvidia.com/compute/cuda/9.2/Prod2/local_installers/cuda_9.2.148_396.37_linux)
+
     sudo ./run... --override
    
 ## Visual Studio Code
