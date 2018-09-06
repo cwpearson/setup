@@ -68,9 +68,13 @@ Pyenv helps manage multiple python installs through shell shims.
 [pyenv-installer](https://github.com/pyenv/pyenv-installer)
 
     curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-    echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
+
+    
+    echo 'export PATH="/home/pearson/.pyenv/bin:$PATH"' >> ~/.zshrc
     echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-    echo 'eval "$(pyenv virtualenv-init -)"' ~/.zshrc
+    echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+    echo 'eval "$(pyenv virtualenv-init -)" /home/pearson/.zshrc' >> ~/.zshrc
+    
     
 [common build problems](https://github.com/pyenv/pyenv/wiki/common-build-problems) lists some packages you probably have to install to build most pythons.
 As of 8/14/2018, it said
