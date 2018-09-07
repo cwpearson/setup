@@ -15,6 +15,13 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
 
     sudo apt install zsh
     
+or
+    wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz
+    tar -xvf 1.0.1.tar.gz
+    cd fasd-1.0.1
+    PREFIX=$HOME/software/fasd-1.0.1 make install
+    echo 'export $PATH=$HOME/software/fasd-1.0.1/bin:$PATH"' >> ~/.zshrc
+    
 ### Install oh-my-zsh
     
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
