@@ -29,7 +29,21 @@ or
     
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+## CMake 3.12.2
+
+To build from source
+
+    sudo apt install zlib1g-dev
+    wget https://cmake.org/files/v3.12/cmake-3.12.2.tar.gz
+    tar -xvf cmake-3.12.2.tar.gz
+    cd cmake-3.12.2
+    ./bootstrap --prefix=$HOME/software/cmake-3.12.2 --parallel=`nproc` --system-curl
+    make -j`nproc` install
+    echo 'export PATH="$HOME/software/cmake-3.12.2/bin:$PATH"' >> ~/.zshrc
+
 ### vscode font for agnoster theme
+
+#### macOS
 
     "editor.fontFamily": "'Hack'"
 
