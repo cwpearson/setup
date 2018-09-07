@@ -21,7 +21,7 @@ or
     tar -xvf 1.0.1.tar.gz
     cd fasd-1.0.1
     PREFIX=$HOME/software/fasd-1.0.1 make install
-    echo 'export $PATH=$HOME/software/fasd-1.0.1/bin:$PATH"' >> ~/.zshrc
+    echo 'export PATH="$HOME/software/fasd-1.0.1/bin:$PATH"' >> ~/.zshrc
     echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
     
     
