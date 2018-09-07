@@ -16,6 +16,7 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
     sudo apt install zsh
     
 or
+
     wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz
     tar -xvf 1.0.1.tar.gz
     cd fasd-1.0.1
