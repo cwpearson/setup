@@ -18,6 +18,7 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
     
 ### Install oh-my-zsh
     
+    sudo apt install -y curl
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 ## CMake 3.12.2
