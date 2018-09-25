@@ -17,12 +17,7 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
     
 or
 
-    wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz
-    tar -xvf 1.0.1.tar.gz
-    cd fasd-1.0.1
-    PREFIX=$HOME/software/fasd-1.0.1 make install
-    echo 'export PATH="$HOME/software/fasd-1.0.1/bin:$PATH"' >> ~/.zshrc
-    echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
+
     
     
 ### Install oh-my-zsh
@@ -33,7 +28,7 @@ or
 
 To build from source
 
-    sudo apt install zlib1g-dev
+    sudo apt install zlib1g-dev libcurl4-openssl-dev
     wget https://cmake.org/files/v3.12/cmake-3.12.2.tar.gz
     tar -xvf cmake-3.12.2.tar.gz
     cd cmake-3.12.2
@@ -50,6 +45,15 @@ To build from source
 ## fasd
 
     sudo apt install fasd
+    echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
+    
+or
+
+    wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz
+    tar -xvf 1.0.1.tar.gz
+    cd fasd-1.0.1
+    PREFIX=$HOME/software/fasd-1.0.1 make install
+    echo 'export PATH="$HOME/software/fasd-1.0.1/bin:$PATH"' >> ~/.zshrc
     echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
 
 ### [macOS](https://github.com/clvv/fasd/wiki/Installing-via-Package-Managers#mac-os-x)
