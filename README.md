@@ -15,10 +15,6 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
 
     sudo apt install zsh
     
-or
-
-
-    
     
 ### Install oh-my-zsh
     
