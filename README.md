@@ -33,6 +33,16 @@ To build from source
     make -j`nproc` install
     echo 'export PATH="$HOME/software/cmake-3.12.2/bin:$PATH"' >> ~/.zshrc
 
+Or binaries on x86
+
+    sudo apt install -y wget
+    wget https://cmake.org/files/v3.12/cmake-3.12.2-Linux-x86_64.sh
+    chmod +x cmake-3.12.2-Linux-x86_64.sh
+    mkdir -p $HOME/software/cmake-3.12.2
+    ./cmake-3.12.2-Linux-x86_64.sh --skip-license --prefix=$HOME/software/cmake-3.12.2
+    echo 'export PATH="$HOME/software/cmake-3.12.2/bin:$PATH"' >> ~/.zshrc
+    rm cmake-3.12.2-Linux-x86_64.sh
+
 ### vscode font for agnoster theme
 
 #### macOS
