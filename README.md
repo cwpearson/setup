@@ -207,6 +207,15 @@ Until the python plugin formally switches over:
 "python.linting.pep8Enabled": true
 ```
 
+## Boost
+
+    curl -L https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2 -o boost_1_68_0.tar.bz2
+    nice -n20 tar -xvf boost_1_68_0.tar.bz2
+    cd boost_1_68_0
+    nice -n20 ./bootstrap --prefix=$HOME/software/boost_1_68_0
+    mkdir $HOME/software/boost_1_68_0
+    nice -n20 ./b2 --prefix=$HOME/software/boost_1_68_0 -j`nproc` install
+
 ## Syncthing GUI
 
 To make it visible to the world ([source](https://superuser.com/questions/1026290/open-syncthing-port-on-raspberry-pi)):
