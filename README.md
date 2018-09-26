@@ -11,6 +11,10 @@ Backports of new versions of KDE Platform, Plasma and Applications as well as ma
 
 More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
 
+## Network Manager Openconnect
+
+    sudo apt install openconnect network-manager-openconnect
+
 ## zsh
 
     sudo apt install zsh
