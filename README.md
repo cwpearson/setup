@@ -119,14 +119,14 @@ Pyenv helps manage multiple python installs through shell shims.
 (zsh)
 
     curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-    echo 'export PATH="/home/pearson/.pyenv/bin:$PATH"' >> ~/.zshrc
+    echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
     echo 'eval "$(pyenv init -)"' >> ~/.zshrc
     echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
     
 (bash)
 
     curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-    echo 'export PATH="/home/pearson/.pyenv/bin:$PATH"' >> ~/.bashrc
+    echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
     echo 'eval "$(pyenv init -)"' >> ~/.bashrc
     echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 
