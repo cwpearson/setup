@@ -218,7 +218,7 @@ Until the python plugin formally switches over:
     nice -n20 tar -xvf boost_1_68_0.tar.bz2
     cd boost_1_68_0
     nice -n20 ./bootstrap --prefix=$HOME/software/boost_1_68_0
-    mkdir $HOME/software/boost_1_68_0
+    mkdir -p $HOME/software/boost_1_68_0
     nice -n20 ./b2 --prefix=$HOME/software/boost_1_68_0 -j`nproc` install
 
 ## Syncthing GUI
