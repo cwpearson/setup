@@ -183,6 +183,12 @@ Optionally add `PIPENV_VENV_IN_PROJECT` to the environment. This puts the `.venv
 
     echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.zshrc
 
+#### FAQ
+
+*Why does `pipenv shell` always `cd` me into `~`?*
+
+make sure your ~ does not have a Pipfile / Pipefile.lock
+
 ## CUDA
 
 On supported platforms, use the CUDA network deb installer
