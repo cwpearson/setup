@@ -278,3 +278,12 @@ Import the pia config file, then set
 * HMCA auth: SHA-1
 * Size of cipher key: 128, but shouldn't need to enter it
 
+## CSL Printer on KDE
+
+Install samba client to get the windows printers
+
+    sudo apt install smbclient
+
+run `system-config-printer` to get the ubuntu printer installer
+
+Follow the directions [here](https://answers.uillinois.edu/illinois.engineering/page.php?id=85135)
