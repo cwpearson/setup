@@ -268,4 +268,13 @@ It's set up for a raspberry pi, but can work with other systems with minor modif
     sudo apt-key add /var/cuda-repo-10-0-local-10.0.130-410.48/7fa2af80.pub
     sudo apt-get update
     sudo apt-get install cuda-toolkit-10-0
+    
+## Private Internet Access through Kubuntu Network Manager
+
+
+Import the pia config file, then set
+
+* Cipher: AES-128-CBC
+* HMCA auth: SHA-1
+* Size of cipher key: 128, but shouldn't need to enter it
 
