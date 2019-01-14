@@ -287,3 +287,12 @@ Install samba client to get the windows printers
 run `system-config-printer` to get the ubuntu printer installer
 
 Follow the directions [here](https://answers.uillinois.edu/illinois.engineering/page.php?id=85135)
+
+## Manual UEFI Paritioning
+
+Create an efi partition of around 500MB on the boot device.
+Otherwise, do as you like.
+
+## Thunderbird and Microsoft Exchange Email
+
+Use the ExQuilla extension
