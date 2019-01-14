@@ -25,7 +25,7 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
     sudo apt install -y curl
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-## CMake 3.12.2
+## [CMake](https://cmake.org/download/) 3.12.2
 
 To build from source
 
