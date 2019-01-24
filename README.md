@@ -311,3 +311,18 @@ add java 8 path to /usr/local/cuda/libnvvp/nvvp.ini
 -vm
 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin
 ```
+
+## Nsight and Kubuntu 18.04
+
+It may not be compatible with openjdk-11.
+Install java 8 jre
+
+```
+sudo apt install openjdk-8-jre
+```
+
+Add the path ot java 8 to the top of `/usr/local/cuda/libnsight/nsight.ini`.
+```
+-vm
+/usr/lib/jvm/java-8-openjdk-amd64/jre/bin
+```
