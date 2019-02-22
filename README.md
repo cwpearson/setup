@@ -1,6 +1,12 @@
 # setup
 Notes on setting up systems
 
+## deja-dup and SMB shares
+
+Use custom or local folder and do
+
+`smb://WORKGROUP;user@server/folder`
+
 ## Kubuntu Backports
 
 Backports of new versions of KDE Platform, Plasma and Applications as well as major KDE apps for Kubuntu.
