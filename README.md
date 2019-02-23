@@ -1,11 +1,11 @@
 # setup
 Notes on setting up systems
 
-## deja-dup and SMB shares
+## deja-dup and afp shares
 
-Use custom or local folder and do
+network location: `afp://memoralpha.local/backups`
 
-`smb://WORKGROUP;user@server/folder`
+folder: `deneb`
 
 ## Kubuntu Backports
 
