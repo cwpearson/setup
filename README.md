@@ -1,6 +1,14 @@
 # setup
 Notes on setting up systems
 
+## Code Formatting and VS Code
+
+Disable formatting from the Microsoft extension, if installed
+
+    C_Cpp:Formatting -> disabled
+
+Install clang-format and use it instead for C+ and CUDA
+
 ## deja-dup and afp shares
 
 network location: `afp://memoralpha.local/backups`
