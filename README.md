@@ -324,7 +324,7 @@ Install java 8 jre
 sudo apt install openjdk-8-jre
 ```
 
-add java 8 path to /usr/local/cuda/libnvvp/nvvp.ini
+add java 8 path to **the end** of `/usr/local/cuda/libnvvp/nvvp.ini`
 ```
 -vm
 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin
@@ -339,7 +339,7 @@ Install java 8 jre
 sudo apt install openjdk-8-jre
 ```
 
-Add the path ot java 8 to the top of `/usr/local/cuda/libnsight/nsight.ini`.
+Add the path to java 8 to **the top** of `/usr/local/cuda/libnsight/nsight.ini`.
 ```
 -vm
 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin
