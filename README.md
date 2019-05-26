@@ -193,11 +193,12 @@ Make the versions of python available wherever you want to run tox. For example:
 
 #### maxOS
 
-    brew install pyenv
+    brew install pipenv
 
 #### Finally 
 
 Optionally add `PIPENV_VENV_IN_PROJECT` to the environment. This puts the `.venv` directory in the directory you run pipenv from, not in `.local/share/virtualenvs`.
+Not recommended if the directory will be synced between multiple machines.
 
     echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.zshrc
 
@@ -205,7 +206,7 @@ Optionally add `PIPENV_VENV_IN_PROJECT` to the environment. This puts the `.venv
 
 *Why does `pipenv shell` always `cd` me into `~`?*
 
-make sure your ~ does not have a Pipfile / Pipefile.lock
+make sure your `~` does not have a `Pipfile` / `Pipefile.lock`
 
 ## CUDA
 
