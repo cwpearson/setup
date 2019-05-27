@@ -228,6 +228,10 @@ To get powerline fonts, do something like the following in user settings:
 }
 ```
 
+### MacOS
+
+`"Source Code Pro for Powerline"`
+
 ### Switching Python linter from pep8 to pycodestyle
 
 Until the python plugin formally switches over:
