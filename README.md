@@ -108,6 +108,8 @@ Install the system python, python3, and python3 distutils
 
     sudo apt install python python-dev python3 python3-dev python3-distutils
 
+An example of setting up python under linux can be found in python/Dockerfile.1604
+
 ### pip
 
 #### Linux

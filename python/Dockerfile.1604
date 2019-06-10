@@ -1,0 +1,42 @@
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install -y curl wget
+
+# install the bare minimum system python
+RUN apt-get update && apt-get install -y \
+  python python-dev python3 python3-dev 
+
+# install deps for pyenv
+RUN apt-get update && apt-get install -y \
+  git
+
+# install deps for building pythons
+RUN apt-get update && apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev git
+
+# download and run the pip install script
+RUN wget -q https://bootstrap.pypa.io/get-pip.py
+RUN python get-pip.py
+
+# install pip in home directory
+RUN python get-pip.py --user
+
+# add the pip install location to path
+RUN echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+
+# install pipenv
+RUN pip install --user pipenv
+
+# install pyenv
+RUN curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+# add pyenv to starup
+RUN echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+RUN echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+RUN echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+
+# this script shows how to install and use a python under this setup
+COPY install_a_python.sh .
+RUN chmod +x install_a_python.sh
+
