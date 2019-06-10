@@ -7,6 +7,7 @@ echo "current python is " `pyenv version`
 
 echo "using pip" `which pip`
 
+
 mkdir -p python3.7.3
 cd python3.7.3
 pyenv install 3.7.3
