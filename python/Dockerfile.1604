@@ -15,9 +15,8 @@ RUN apt-get update && apt-get install -y make build-essential libssl-dev zlib1g-
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev git
 
-# download and run the pip install script
+# download the install pip script
 RUN wget -q https://bootstrap.pypa.io/get-pip.py
-RUN python get-pip.py
 
 # install pip in home directory
 RUN python get-pip.py --user
