@@ -2,10 +2,13 @@
 
 set -eou pipefail -x
 
-echo "current dir is" `pwd`
-echo "current python is " `pyenv version`
+echo "current dir:" 
+pwd
+echo "current python:"
+pyenv version
 
-echo "using pip" `which pip`
+echo "using pip:"
+which pip
 
 
 mkdir -p python3.7.3
@@ -15,3 +18,8 @@ pyenv local 3.7.3
 python3 --version
 which python3
 pipenv shell --python python3
+
+which python
+python --version
+which pip
+pyenv version
