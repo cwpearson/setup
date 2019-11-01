@@ -17,7 +17,11 @@ folder: `deneb`
 
 ## mounting cifs shares in /etc/fstab
 
-//memoryalpha.local/backups 	/mnt/memoryalpha/backups	cifs	file_mode=0777,dir_mode=0777,username=pearson,password=PASSWORD,vers=2.0	0	2
+`noperm` causes chmod to be silently ignored, which may be important for some autmated backup software
+
+```
+//memoryalpha.local/backups 	/mnt/memoryalpha/backups	cifs	noperm,file_mode=0777,dir_mode=0777,username=pearson,password=PASSWORD,vers=2.0	0	2
+```
 
 ## Kubuntu Backports
 
