@@ -200,6 +200,10 @@ Make the versions of python available wherever you want to run tox. For example:
 #### maxOS
 
     brew install pipenv
+    
+You may at some later date see this error: `pkg_resources.DistributionNotFound: The 'pipenv==2018.11.26' ...`. If so, do
+
+    brew reinstall pipenv
 
 #### Finally 
 
