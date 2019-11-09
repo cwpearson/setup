@@ -108,13 +108,28 @@ or
 
 This is to set up python with pipenv and pyenv, to support testing multiple pythons with tox.
 
-Install the system python, python3, and python3 distutils
+We use this setup to avoid the following problems:
+* using `sudo pip`: shouldn't need root to install local packages
+* using `pip --user`: conflicting package versions for different projects
+* project 1 needs python 3.5, project 2 needs python 3.7
+
+Four tools:
+* `pyenv`: allows you to install and use specific versions of Python and its related tools. Messes with $PATH and symlinks.
+* `pip`: installs python packages
+* `virtualenv`: tricks pip into installing packages into arbitrary directories
+* `pipenv`: puts all of the above together
+  * `pipenv install`: satisfy deps, use virtualenv to create a project-specific package dir, uses pip to install
+  * `pipenv shell`: uses pyenv to create a directory with the right python version, integrates deps into that environment
+
+Basically, use as little of your OS's package management tools as possible with python.
+
+First install the system python, python3, and python3 distutils
 
     sudo apt install python python-dev python3 python3-dev python3-distutils
 
 An example of setting up python under linux can be found in python/Dockerfile.1604
 
-### pip
+### Install pip
 
 #### Linux
 
@@ -132,7 +147,7 @@ Probably add `$HOME/.local/bin` to the `PATH` so you can use `pip`.
 
 Don't install pip, do everything in pipenvs (see below).
 
-### [pyenv](https://github.com/pyenv/pyenv)
+### Install [pyenv](https://github.com/pyenv/pyenv)
 
 #### Linux
 
@@ -169,28 +184,6 @@ add `eval "$(pyenv init -)"` to the shell init
 
     echo 'eval "$(pyenv init -)"' >> ~/.zshrc
    
-
-### Using pyenv with tox
-
-#### Linux
-
-Use pyenv to install the desired versions of python
-
-    pyenv install 3.5.5
-    pyenv install 3.7.0
- 
-#### macOS
-
-Some python packages need python installed as a "framework." The following is supposed to work:
-
-      PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.6
-      
-#### Finally 
-
-Make the versions of python available wherever you want to run tox. For example:
-
-    pyenv local 3.5.5 3.7.0
-
 ### Install [pipenv](https://docs.pipenv.org/)
 
 #### Linux
@@ -217,6 +210,30 @@ Not recommended if the directory will be synced between multiple machines.
 *Why does `pipenv shell` always `cd` me into `~`?*
 
 make sure your `~` does not have a `Pipfile` / `Pipefile.lock`
+
+
+### Using pyenv with tox
+
+#### Linux
+
+Use pyenv to install the desired versions of python
+
+    pyenv install 3.5.5
+    pyenv install 3.7.0
+ 
+#### macOS
+
+Some python packages need python installed as a "framework." The following is supposed to work:
+
+      PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.6
+      
+#### Finally 
+
+Make the versions of python available wherever you want to run tox. For example:
+
+    pyenv local 3.5.5 3.7.0
+
+
 
 ## CUDA
 
