@@ -121,13 +121,11 @@ Four tools:
   * `pipenv install`: satisfy deps, use virtualenv to create a project-specific package dir, uses pip to install
   * `pipenv shell`: uses pyenv to create a directory with the right python version, integrates deps into that environment
 
-Basically, use as little of your OS's package management tools as possible with python.
+Basically, use as little of your OS's package management tools as possible with python. A full example of setting up python on Linux can be found in `python/Dockerfile.1604` and `python/Dockerfile.1804`.
 
-First install the system python, python3, and python3 distutils
+### Install the system python (probably already done)
 
-    sudo apt install python python-dev python3 python3-dev python3-distutils
-
-An example of setting up python under linux can be found in python/Dockerfile.1604
+    sudo apt install python python-dev
 
 ### Install pip
 
