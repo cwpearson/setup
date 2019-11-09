@@ -6,16 +6,17 @@ RUN apt-get update && apt-get install -y curl wget
 
 # install the bare minimum system python
 RUN apt-get update && apt-get install -y \
-  python python-dev python3 python3-dev 
+  python python-dev 
 
 # install deps for pyenv
 RUN apt-get update && apt-get install -y \
   git
 
 # install deps for building pythons
-RUN apt-get update && apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev git
+RUN apt-get update && apt-get install -y --no-install-suggests --no-install-recommends \
+  make build-essential libssl-dev zlib1g-dev libbz2-dev \
+  libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+  xz-utils tk-dev libffi-dev liblzma-dev git
 
 # download the install pip script
 RUN wget -q https://bootstrap.pypa.io/get-pip.py

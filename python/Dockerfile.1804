@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y curl wget
 
 # install the bare minimum system python
 RUN apt-get update && apt-get install -y \
-  python python-dev python3 python3-dev 
+  python python-dev 
 
 # install deps for pyenv
 RUN apt-get update && apt-get install -y \
