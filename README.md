@@ -347,7 +347,33 @@ Use the ExQuilla extension
 
 ## NVVP and Kubuntu 18.04
 
-It may not be compatible with openjdk-11.
+You may see an error that looks something like
+```
+!SESSION 2019-11-26 16:10:14.044 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-11-26 16:10:15.652
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.core [69]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+        at org.eclipse.osgi.container.Module.start(Module.java:434)
+        at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+        at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+        at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+        at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+        at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+        at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+        at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+```
+
+When opening Nvidia Visual Profiler.
+This might be because it is bit compatible with openjdk-11.
 Install java 8 jre
 
 ```
