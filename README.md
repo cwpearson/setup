@@ -41,14 +41,14 @@ Backports of new versions of KDE Platform, Plasma and Applications as well as ma
 
     sudo apt install zsh
     
-Edit `~/.zshrc`
-    
-    plugins=(git z)
-    
 ### Install oh-my-zsh
     
     sudo apt install -y curl git
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Edit `~/.zshrc`
+    
+    plugins=(git z)
 
 ## [CMake](https://cmake.org/download/) 3.12.2
 
