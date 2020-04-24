@@ -49,6 +49,8 @@ Backports of new versions of KDE Platform, Plasma and Applications as well as ma
 Edit `~/.zshrc`
     
     plugins=(git z)
+    
+May have to `touch ~/.z` if complains about missing file.
 
 ## [CMake](https://cmake.org/download/) 3.12.2
 
