@@ -47,7 +47,7 @@ Edit `~/.zshrc`
     
 ### Install oh-my-zsh
     
-    sudo apt install -y curl
+    sudo apt install -y curl git
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 ## [CMake](https://cmake.org/download/) 3.12.2
