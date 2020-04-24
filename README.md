@@ -23,7 +23,9 @@ folder: `deneb`
 //memoryalpha.local/backups 	/mnt/memoryalpha/backups	cifs	noperm,file_mode=0777,dir_mode=0777,username=pearson,password=PASSWORD,vers=2.0	0	2
 ```
 
-## Kubuntu Backports
+## Kubuntu 20.04
+
+### Install [Kubuntu Backports](https://community.kde.org/Kubuntu/PPAs#Kubuntu_Backports)
 
 Backports of new versions of KDE Platform, Plasma and Applications as well as major KDE apps for Kubuntu.
 
@@ -31,9 +33,7 @@ Backports of new versions of KDE Platform, Plasma and Applications as well as ma
     sudo apt-get update
     sudo apt full-upgrade
 
-More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
-
-## Network Manager Openconnect
+### Network Manager Openconnect
 
     sudo apt install openconnect network-manager-openconnect
 
@@ -41,6 +41,9 @@ More info at the [kubuntu wiki](https://community.kde.org/Kubuntu/PPAs)
 
     sudo apt install zsh
     
+Edit `~/.zshrc`
+    
+    plugins=(git z)
     
 ### Install oh-my-zsh
     
@@ -84,20 +87,6 @@ Or binaries on x86 (zsh)
 #### macOS
 
     "editor.fontFamily": "'Hack'"
-
-## fasd
-
-    sudo apt install fasd
-    echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
-    
-or
-
-    wget https://github.com/clvv/fasd/archive/1.0.1.tar.gz
-    tar -xvf 1.0.1.tar.gz
-    cd fasd-1.0.1
-    PREFIX=$HOME/software/fasd-1.0.1 make install
-    echo 'export PATH="$HOME/software/fasd-1.0.1/bin:$PATH"' >> ~/.zshrc
-    echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
 
 ### [macOS](https://github.com/clvv/fasd/wiki/Installing-via-Package-Managers#mac-os-x)
 
