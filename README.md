@@ -23,11 +23,21 @@ folder: `deneb`
 //memoryalpha.local/backups 	/mnt/memoryalpha/backups	cifs	noperm,file_mode=0777,dir_mode=0777,username=pearson,password=PASSWORD,vers=2.0	0	2
 ```
 
-## Debian 10
+## Debian 10 Testing
 
-On stable or testing, install firefox from flatpack.
 
-Profiles are in `~/.var/app/org.mozilla.firefox/.mozilla/firefox/`
+* Switch sources to testing
+  * ```
+    deb http://deb.debian.org/debian/ testing main
+    deb-src http://deb.debian.org/debian/ testing main
+    deb http://security.debian.org testing-security main contrib
+    deb-src http://security.debian.org testing-security main contrib
+    ```
+  * 
+
+* Install Firefox from flatpak, since only firefox-esr is installed
+  * Profiles are in `~/.var/app/org.mozilla.firefox/.mozilla/firefox/`
+  * `apt-get remove --purge firefox-esr`
 
 
 ## Kubuntu 20.04
