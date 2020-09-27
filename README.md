@@ -34,6 +34,8 @@ Backports of new versions of KDE Platform, Plasma and Applications as well as ma
     sudo apt full-upgrade
 
 ### Network Manager Openconnect
+Needed for Cisco AnyConnect VPN through KDE network manager.
+
 
     sudo apt install openconnect network-manager-openconnect
 
