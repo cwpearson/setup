@@ -25,6 +25,8 @@ folder: `deneb`
 
 ## Debian 10 Testing
 
+* Use the btrfs filesystem
+  * make a snaptshot right away
 
 * Switch sources to testing
   * ```
@@ -33,7 +35,7 @@ folder: `deneb`
     deb http://security.debian.org testing-security main contrib
     deb-src http://security.debian.org testing-security main contrib
     ```
-  * 
+  * `apt full-upgrade`
 
 * Install Firefox from flatpak, since only firefox-esr is installed
   * Profiles are in `~/.var/app/org.mozilla.firefox/.mozilla/firefox/`
