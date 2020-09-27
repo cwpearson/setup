@@ -27,7 +27,7 @@ folder: `deneb`
 
 On stable or testing, install firefox from flatpack.
 
-Profiles are in `~/.var/app/org.mozilla.firefox/cache/mozilla/firefox`
+Profiles are in `~/.var/app/org.mozilla.firefox/.mozilla/firefox/`
 
 
 ## Kubuntu 20.04
