@@ -23,6 +23,13 @@ folder: `deneb`
 //memoryalpha.local/backups 	/mnt/memoryalpha/backups	cifs	noperm,file_mode=0777,dir_mode=0777,username=pearson,password=PASSWORD,vers=2.0	0	2
 ```
 
+## Debian 10
+
+On stable or testing, install firefox from flatpack.
+
+Profiles are in `~/.var/app/org.mozilla.firefox/cache/mozilla/firefox`
+
+
 ## Kubuntu 20.04
 
 ### Install [Kubuntu Backports](https://community.kde.org/Kubuntu/PPAs#Kubuntu_Backports)
