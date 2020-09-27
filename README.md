@@ -50,6 +50,7 @@ Needed for Cisco AnyConnect VPN through KDE network manager.
 
 Edit `~/.zshrc`
     
+    ZSH_THEME="agnoster"
     plugins=(git z)
     
 May have to `touch ~/.z` if complains about missing file.
