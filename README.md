@@ -27,6 +27,10 @@ folder: `deneb`
 
 * Use the btrfs filesystem
   * make a snaptshot right away
+    * `btrfs subvolume snapshot / /snapshots/YYYY-MM-DD-<description>`
+  * periodically defragment source subvolumes (not snapshots)
+    * `sudo btrfs filesystem defragment -r /`
+    
 
 * Switch sources to testing
   * ```
