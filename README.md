@@ -42,6 +42,10 @@ folder: `deneb`
   * Binary is in `/var/lib/flatpak/exports/bin/org.mozilla.firefox`
   * `apt-get remove --purge firefox-esr`
 
+* Install Thunderbird from Flathub
+
+* Install libreoffice debs from website.
+  * `sudo apt-get remvoe libreoffice* --purge`
 
 ## Kubuntu 20.04
 
@@ -354,6 +358,11 @@ Follow the directions [here](https://answers.uillinois.edu/illinois.engineering/
 
 Create an efi partition of around 500MB on the boot device.
 Otherwise, do as you like.
+
+## Thunderbird
+
+* from flathub: `flatpak install flathub org.mozilla.Thunderbird`
+  * install extensions from within Thunderbird
 
 ## Thunderbird and Microsoft Exchange Email
 
