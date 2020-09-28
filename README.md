@@ -39,6 +39,7 @@ folder: `deneb`
 
 * Install Firefox from flatpak, since only firefox-esr is installed
   * Profiles are in `~/.var/app/org.mozilla.firefox/.mozilla/firefox/`
+  * Binary is in `/var/lib/flatpak/exports/bin/org.mozilla.firefox`
   * `apt-get remove --purge firefox-esr`
 
 
