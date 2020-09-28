@@ -262,12 +262,6 @@ On unsupported platforms, install the Nvidia driver from the [graphics drivers p
 
 On Kubuntu & Debian 10, it's easiest to use `hack` for the `Terminal > Integrated: Font Family` setting.
     
-Disable formatting from the Microsoft extension, if installed
-
-    C_Cpp:Formatting -> disabled
-
-Install clang-format and use it instead for C+ and CUDA
-
 ### Switching Python linter from pep8 to pycodestyle
 
 Until the python plugin formally switches over:
