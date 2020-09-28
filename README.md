@@ -1,13 +1,6 @@
 # setup
 Notes on setting up systems
 
-## Code Formatting and VS Code
-
-Disable formatting from the Microsoft extension, if installed
-
-    C_Cpp:Formatting -> disabled
-
-Install clang-format and use it instead for C+ and CUDA
 
 ## deja-dup and afp shares
 
@@ -267,17 +260,13 @@ On unsupported platforms, install the Nvidia driver from the [graphics drivers p
    
 ## Visual Studio Code
 
-To get powerline fonts, do something like the following in user settings:
+On Kubuntu & Debian 10, it's easiest to use `hack` for the `Terminal > Integrated: Font Family` setting.
     
-```json
-{
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
-}
-```
+Disable formatting from the Microsoft extension, if installed
 
-### MacOS
+    C_Cpp:Formatting -> disabled
 
-`"Source Code Pro for Powerline"`
+Install clang-format and use it instead for C+ and CUDA
 
 ### Switching Python linter from pep8 to pycodestyle
 
