@@ -50,6 +50,7 @@ Needed for Cisco AnyConnect VPN through KDE network manager.
 * Enable virtual desktops: System Settings > Workspace Behavior > Virtual Desktops
 * Enable switching shortcuts: System Settings > Global Shortcuts > KWin
   * "Switch One Desktop Down": Ctrl+Alt+Down
+  * "Window One Desktop Down": Meta+Ctrl+Alt+Down
 
 
 ## zsh
