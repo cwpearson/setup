@@ -1,21 +1,6 @@
 # setup
 Notes on setting up systems
 
-
-## deja-dup and afp shares
-
-network location: `afp://memoralpha.local/backups`
-
-folder: `deneb`
-
-## mounting cifs shares in /etc/fstab
-
-`noperm` causes chmod to be silently ignored, which may be important for some autmated backup software
-
-```
-//memoryalpha.local/backups 	/mnt/memoryalpha/backups	cifs	noperm,file_mode=0777,dir_mode=0777,username=pearson,password=PASSWORD,vers=2.0	0	2
-```
-
 ## Debian 10 Testing
 
 * Use the btrfs filesystem
@@ -54,14 +39,20 @@ Backports of new versions of KDE Platform, Plasma and Applications as well as ma
     sudo apt-get update
     sudo apt full-upgrade
 
+## KDE 5
+
 ### Network Manager Openconnect
 Needed for Cisco AnyConnect VPN through KDE network manager.
 
-
     sudo apt install openconnect network-manager-openconnect
 
-## zsh
+### Virtual Desktops
+* Enable virtual desktops: System Settings > Workspace Behavior > Virtual Desktops
+* Enable switching shortcuts: System Settings > Global Shortcuts > KWin
+  * "Switch One Desktop Down": Ctrl+Alt+Down
 
+
+## zsh
     sudo apt install zsh
     
 ### Install oh-my-zsh
@@ -409,4 +400,18 @@ Add the path to java 8 to **the top** of `/usr/local/cuda/libnsight/nsight.ini`.
 ```
 -vm
 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin
+```
+
+## deja-dup and afp shares
+
+network location: `afp://memoralpha.local/backups`
+
+folder: `deneb`
+
+## mounting cifs shares in /etc/fstab
+
+`noperm` causes chmod to be silently ignored, which may be important for some autmated backup software
+
+```
+//memoryalpha.local/backups 	/mnt/memoryalpha/backups	cifs	noperm,file_mode=0777,dir_mode=0777,username=pearson,password=PASSWORD,vers=2.0	0	2
 ```
