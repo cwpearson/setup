@@ -23,11 +23,16 @@ Notes on setting up systems
   * Profiles are in `~/.var/app/org.mozilla.firefox/.mozilla/firefox/`
   * Binary is in `/var/lib/flatpak/exports/bin/org.mozilla.firefox`
   * `apt-get remove --purge firefox-esr`
+* Probably want to install binary instead, flatpak doesn't use system fonts (as of 11/2020).
 
 * Install Thunderbird from Flathub
 
 * Install libreoffice debs from website.
   * `sudo apt-get remvoe libreoffice* --purge`
+  
+* During upgrade, many packages may be kept back
+  * `sudo apt-get --with-new-pkgs upgrade` will upgrade any packages that were held because upgrading them requires a new dependency to be installed.
+  * `sudo apt-get install --only-upgrade <package>` will try to upgrade the package without marking it as manually installed
 
 ## Kubuntu 20.04
 
