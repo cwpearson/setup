@@ -3,7 +3,7 @@ Notes on setting up systems
 
 ## Debian 10 Testing
 
-* Updates may frequently break 3rd-party software
+* Updates may frequently break 3rd-party software (e.g., upgrading to a kernel unsupported by CUDA)
 
 * Use the btrfs filesystem
   * make a snaptshot right away and before updates
