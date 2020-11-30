@@ -3,13 +3,16 @@ Notes on setting up systems
 
 ## Debian 10 Testing
 
+* Updates may frequently break 3rd-party software
+
 * Use the btrfs filesystem
-  * make a snaptshot right away
+  * make a snaptshot right away and before updates
     * `btrfs subvolume snapshot / /snapshots/YYYY-MM-DD-<description>`
   * periodically defragment source subvolumes (not snapshots)
     * `sudo btrfs filesystem defragment -r /`
+  * try to keep the number of extant snapshots lowish
+    * `sudo btrfs subvolume delete /snapshots/<your snapshot here>`
     
-
 * Switch sources to testing
   * ```
     deb http://deb.debian.org/debian/ testing main
@@ -33,6 +36,9 @@ Notes on setting up systems
 * During upgrade, many packages may be kept back
   * `sudo apt-get --with-new-pkgs upgrade` will upgrade any packages that were held because upgrading them requires a new dependency to be installed.
   * `sudo apt-get install --only-upgrade <package>` will try to upgrade the package without marking it as manually installed
+
+ * Install the best KDE
+   * `sudo apt install task-kde-desktop`
 
 ## Kubuntu 20.04
 
