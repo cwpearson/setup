@@ -141,6 +141,30 @@ Four tools:
 
 Basically, use as little of your OS's package management tools as possible with python. A full example of setting up python on Linux can be found in `python/Dockerfile.1604` and `python/Dockerfile.1804`.
 
+
+### macOS
+
+macOS comes with an old python 2.7 for compatibility, and a newer python 3.
+But, we want to avoid using the system pythons as much as possible.
+
+[Install pyenv](https://github.com/pyenv/pyenv#homebrew-on-mac-os-x)
+
+    brew install pyenv
+   
+add `eval "$(pyenv init -)"` to the shell init
+
+    echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+    
+Then get pipenv too
+
+    brew install pipenv
+    
+You may at some later date see this error: `pkg_resources.DistributionNotFound: The 'pipenv==2018.11.26' ...`. If so, do
+
+    brew reinstall pipenv
+
+### Other
+
 ### Install the system python (probably already done)
 
     sudo apt install python python-dev
@@ -191,14 +215,6 @@ As of 8/14/2018, it said
     sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
     xz-utils tk-dev libffi-dev liblzma-dev
-
-#### [macOS](https://github.com/pyenv/pyenv#homebrew-on-mac-os-x)
-
-    brew install pyenv
-   
-add `eval "$(pyenv init -)"` to the shell init
-
-    echo 'eval "$(pyenv init -)"' >> ~/.zshrc
    
 ### Install [pipenv](https://docs.pipenv.org/)
 
@@ -206,13 +222,6 @@ add `eval "$(pyenv init -)"` to the shell init
 
     pip install --user pipenv
 
-#### maxOS
-
-    brew install pipenv
-    
-You may at some later date see this error: `pkg_resources.DistributionNotFound: The 'pipenv==2018.11.26' ...`. If so, do
-
-    brew reinstall pipenv
 
 #### Finally 
 
