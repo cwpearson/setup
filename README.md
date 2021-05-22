@@ -147,13 +147,9 @@ Basically, use as little of your OS's package management tools as possible with 
 macOS comes with an old python 2.7 for compatibility, and a newer python 3.
 But, we want to avoid using the system pythons as much as possible.
 
-[Install pyenv](https://github.com/pyenv/pyenv#homebrew-on-mac-os-x)
+[Install pyenv](https://github.com/pyenv/pyenv#homebrew-on-macos)
 
     brew install pyenv
-   
-add `eval "$(pyenv init -)"` to the shell init
-
-    echo 'eval "$(pyenv init -)"' >> ~/.zshrc
     
 Then get pipenv too
 
