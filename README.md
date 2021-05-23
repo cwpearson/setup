@@ -151,9 +151,10 @@ But, we want to avoid using the system pythons as much as possible.
 
     brew install pyenv
     
-Then get pipenv too
+Then get pipenv too. As of 5/2021, not recommended to use brew to install pipenv.
+So, install a pipenv per python you use with pyenv
 
-    brew install pipenv
+    pip install pipenv
     
 You may at some later date see this error: `pkg_resources.DistributionNotFound: The 'pipenv==2018.11.26' ...`. If so, do
 
